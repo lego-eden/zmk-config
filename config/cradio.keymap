@@ -39,10 +39,10 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │ RETURN   │
-            &kp A      &kp S     &ht LGUI D  &ht LALT F &kp G          &kp H     &ht LALT J &ht LGUI K  &kp L     &kp RETURN
+            &kp A      &kp S      &kp D       &kp F     &kp G          &kp H      &kp J      &kp K      &kp L     &ht LALT RETURN
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , ;      │ . :      │ ESC      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ESC
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &ht LGUI ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp SPACE  &sk LCTRL     &sk LSHFT    &to 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
@@ -56,12 +56,12 @@
       &kp LS(EQUAL) &kp RA(MINUS) &kp LS(BSLH) &kp LS(N8) &kp NUBS  &kp LS(NUBS) &kp LS(N9) &kp LS(N7) &kp LS(N5) &kp LBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  @       │  $       │  -       │  {       │  [       │   │  ]       │  }       │  +       │  Ö       │  Ä       │
-       &kp RA(N2) &kp RA(N4) &ht LGUI FSLH &ht LALT RA(N7) &kp RA(N8) &kp RA(N9) &ht LALT RA(N0) &ht LGUI MINUS &kp SEMI &kp SQT
+       &kp RA(N2) &kp RA(N4)      &kp FSLH   &kp RA(N7) &kp RA(N8)     &kp RA(N9) &kp RA(N0) &kp MINUS  &kp SEMI   &ht LALT SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  #       │  =       │  |       │  !       │  '       │   │  "       │  ?       │  &       │  DEL     │BACKSPACE │
-           &kp LS(N3) &kp LS(N0)  &kp RA(NUBS) &kp LS(N1) &kp BSLH    &kp LS(N2) &kp LS(MINUS) &kp LS(N6) &kp DEL  &kp BSPC
+           &kp LS(N3) &kp LS(N0)  &kp RA(NUBS) &kp LS(N1) &kp BSLH    &kp LS(N2) &kp LS(MINUS) &kp LS(N6) &kp DEL  &ht LGUI BSPC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &to 0      &kp TAB       &sk LCTRL  &to 2
+                                             &to 0      &kp LCTRL     &sk TAB  &to 2
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -70,13 +70,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │  ^       │  ~       │  ¨       │          │          │
-            &trans     &kp N7     &kp N8     &kp N9     &trans       &kp LS(BSLH) &kp RA(BSLH) &kp BSLH &trans     &trans
+            &trans     &kp N7     &kp N8     &kp N9     &trans       &kp LS(RBKT) &kp RA(RBKT) &kp RBKT &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &kp N4   &ht LGUI N5 &ht LALT N6 &trans         &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT   &trans
+            &trans     &kp N4     &kp N5     &kp N6     &trans         &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT   &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &kp N1     &kp N2     &kp N3     &trans       &trans &kp LA(TAB) &kp LS(LA(TAB)) &trans     &trans
+            &trans     &kp N1     &kp N2     &kp N3     &trans         &trans   &kp LA(TAB) &kp LS(LA(TAB)) &trans &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &to 0     &sk LCTRL       &sk LSHFT   &to 3
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
