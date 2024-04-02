@@ -53,7 +53,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│  `       │  \       │  *       │  (       │  <       │   │  >       │  )       │  /       │  %       │  Å       │
-      &kp LS(EQUALS) &kp RA(MINUS) &kp LS(BSLH) &kp LS(N8) &kp NUBS  &kp LS(NUBS) &kp LS(N9) &kp LS(N7) &kp        &kp LBKT
+      &kp LS(EQUALS) &kp RA(MINUS) &kp LS(BSLH) &kp LS(N8) &kp NUBS  &kp LS(NUBS) &kp LS(N9) &kp LS(N7) &kp LS(N5) &kp LBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  @       │  $       │  -       │  {       │  [       │   │  ]       │  }       │  +       │  Ö       │  Ä       │
            &kp RA(N2) &kp RA(N4)  &kp FSLH  &kp RA(N7) &kp RA(N8)     &kp RA(N9) &kp RA(N0) &kp MINUS   &kp SEMI   &kp SQT
