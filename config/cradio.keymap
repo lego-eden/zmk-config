@@ -44,7 +44,7 @@
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , ;      │ . :      │ ESC      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp ESC
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &kp SPACE  &sk LSHIFT     &sk LCTRL    &to 1
+                                            &kp SPACE  &sk LCTRL     &sk LSHFT    &to 1
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
