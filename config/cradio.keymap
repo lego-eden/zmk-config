@@ -110,7 +110,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &trans     &trans     &trans     &trans         &kp HOME   &kp PGDN   &kp PGUP   &kp PGUP   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans        &kp C_UNDO &kp C_REDO
+                                             &trans     &trans        &kp K_UNDO &kp K_REDO
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
