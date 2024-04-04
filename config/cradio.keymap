@@ -108,7 +108,7 @@
             &trans     &trans     &trans     &trans     &trans         &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &kp HOME   &kp PGDN   &kp PGUP   &kp PGUP   &trans
+            &trans     &trans     &trans     &trans     &trans         &kp HOME   &kp PGDN   &kp PGUP   &kp END   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                              &trans     &trans        &kp K_UNDO &kp K_REDO
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
