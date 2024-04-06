@@ -36,7 +36,7 @@
             timeout-ms = <80>;
             key-positions = <30 31>;
             bindings = <&kp ESC>;
-            layer = <0 1 2 3 4 5>;
+            layers = <0 1 2 3 4 5>;
         };
         combo_del {
             timeout-ms = <80>;
