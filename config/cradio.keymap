@@ -72,8 +72,8 @@
         number_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ´       │          │          │          │  !       │   │          │          │          │          │          │
-            &kp EQUAL   &kp N7     &kp N8     &kp N9     &kp LS(N1)   &trans     &trans     &trans     &trans     &trans
+        //│  ^       │          │          │          │  !       │   │          │          │          │          │          │
+            &kp LS(RBKT) &kp N7     &kp N8     &kp N9     &kp LS(N1)   &trans     &trans     &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  @       │          │          │          │  &       │   │          │          │          │          │          │
             &kp RA(N2)  &kp N4     &kp N5     &kp N6     &kp LS(N6)  &trans     &trans     &trans     &trans     &mo 5
@@ -120,32 +120,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans    &kp LS(N8)  &kp NUBS       &trans    &trans     &trans     &trans     &trans
+            &trans     &trans     &kp EQUAL  &kp LS(N8)  &kp NUBS    &kp LS(NUBS) &kp LS(N9) &kp LS(EQUAL) &trans &kp LBKT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &kp LS(N7) &kp RA(N7)  &kp RA(N8)     &trans     &trans     &trans     &trans     &trans
+            &trans   &kp EQUAL &kp LS(N7) &kp RA(N7)  &kp RA(N8)    &kp RA(N9) &kp RA(N0) &kp RA(MINUS) &kp LS(EQUAL) &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans   &kp LS(MINUS) &kp LS(N3)    &trans     &trans     &trans     &trans     &trans
+            &trans     &trans     &kp MINUS  &kp LS(MINUS) &kp LS(N3)  &kp LS(N5) &kp LA(RBKT) &kp LS(BSLH) &trans   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp BSLH    &kp LS(N2)     &trans     &trans
-        //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-            >;
-        };
-
-        symbol_right_layer {
-            bindings = <
-        //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans       &kp LS(NUBS) &kp LS(N9) &trans     &trans     &kp LBKT
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &kp RA(N9) &kp RA(N0) &kp RA(MINUS)&trans   &kp SQT
-        //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &trans     &trans     &trans         &kp LS(N5) &kp LS(RBKT) &trans     &trans   &trans
-        //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &kp MINUS &kp LS(BSLH)
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
