@@ -46,7 +46,7 @@
         combo_no_hrm {
             timeout-ms = <50>;
             key-positions = <29 33>;
-            bindings = <&tog 6>;
+            bindings = <&tog 5>;
         };
     };
 
