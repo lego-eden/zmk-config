@@ -8,6 +8,7 @@
 // Home row mods macro
 #define HRML(k1,k2,k3,k4) &ht LGUI k1  &ht LCTRL k2  &ht LALT k3  &ht LSHFT k4
 #define HRMR(k1,k2,k3)    &ht LSHFT k1 &ht LALT k2   &ht LCTRL k3 &td1
+#define HRMR_TWO(k1,k2,k3,k4) &ht LSHFT k1  &ht LALT k2  &ht LCTRL k3  &ht LGUI k4
 
 / {
     behaviors {
@@ -84,30 +85,18 @@
         number_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│  ^       │          │          │          │  !       │   │          │          │          │          │          │
-            &kp LS(RBKT) &kp N7     &kp N8     &kp N9     &kp LS(N1)   &trans     &trans     &trans     &trans     &trans
+        //│          │          │ @        │ &        │ !        │   │ ^        │ |        │ $        │          │          │
+            &trans     &trans    &kp RA(N2) &kp LS(N6) &kp LS(N1)    &kp LS(RBKT) &kp RA(NUBS) &kp RA(N4) &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  @       │          │          │          │  &       │   │          │          │          │          │          │
-            &kp RA(N2)  &kp N4     &kp N5     &kp N6     &kp LS(N6)  &trans     &trans     &trans     &trans     &mo 5
+        //│          │          │          │          │          │   │          │          │          │          │          │
+       HRML(    N1,          N2,        N3,        N4)    &kp N5      &kp N6 HRMR_TWO(  N7,      N8,        N9,        N0 )
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│  $       │          │          │          │  |       │   │          │          │          │          │          │
-            &kp RA(N4) &kp N1     &kp N2     &kp N3      &kp RA(NUBS)  &trans     &trans     &trans     &trans     &trans
+        //│          │          │          │          │          │   │          │          │          │          │          │
+            &trans     &trans     &trans     &trans     &trans         &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
         //                                 |          |  =       |
                                              &kp N0    &kp LS(N0)      &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
-    //     //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-    //     //│  `       │  \       │  *       │  (       │  <       │   │  >       │  )       │  /       │  %       │  Å       │
-    //   &kp LS(EQUAL) &kp RA(MINUS) &kp LS(BSLH) &kp LS(N8) &kp NUBS  &kp LS(NUBS) &kp LS(N9) &kp LS(N7) &kp LS(N5) &kp LBKT
-    //     //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-    //     //│  @       │  $       │  -       │  {       │  [       │   │  ]       │  }       │  +       │  Ö       │  Ä       │
-    //         &kp RA(N2) &kp RA(N4) &kp FSLH   &kp RA(N7) &kp RA(N8)     &kp RA(N9) &kp RA(N0) &kp MINUS  &kp SEMI   &ht LALT SQT
-    //     //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-    //     //│  #       │  =       │  |       │  !       │  '       │   │  "       │  ?       │  &       │  DEL     │BACKSPACE │
-    //        &kp LS(N3) &kp LS(N0)  &kp RA(NUBS) &kp LS(N1) &kp BSLH    &kp LS(N2) &kp LS(MINUS) &kp LS(N6) &kp DEL  &ht LGUI BSPC
-    //     //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-    //                                          &to 0      &sk LCTRL     &kp TAB  &to 2
-    //     //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
 
