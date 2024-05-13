@@ -20,13 +20,13 @@
             require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
         };
-        td0: tap_dance_p_och_å {
+        td0: tap_dance_nordic_top {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
             bindings = <&kp P>, <&kp LBKT>;
         };
-        td1: tap_dance_ö_och_ä {
+        td1: tap_dance_nordic_lower {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <150>;
