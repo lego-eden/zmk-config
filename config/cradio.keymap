@@ -31,7 +31,7 @@
             #binding-cells = <3>;
             tapping-term-ms <150>;
             bindings = <&ht>, <&kp>;
-        }
+        };
     };
 
     // conditional_layers {
