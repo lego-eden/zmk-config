@@ -29,7 +29,7 @@
         td1: tap_dance_hold {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <3>;
-            tapping-term-ms <150>;
+            tapping-term-ms = <150>;
             bindings = <&ht>, <&kp>;
         };
     };
