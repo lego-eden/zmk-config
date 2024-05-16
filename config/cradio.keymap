@@ -61,6 +61,11 @@
             key-positions = <29 33>;
             bindings = <&tog 5>;
         };
+        combo_reset_bt {
+            timeout-ms = <80>;
+            key-positions = <30 33>;
+            bindings = <&bt BT_CLR>;
+        }
     };
 
     keymap {
