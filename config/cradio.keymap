@@ -65,7 +65,7 @@
             timeout-ms = <80>;
             key-positions = <30 33>;
             bindings = <&bt BT_CLR>;
-        }
+        };
     };
 
     keymap {
