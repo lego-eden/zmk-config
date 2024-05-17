@@ -61,11 +61,6 @@
             key-positions = <29 33>;
             bindings = <&tog 5>;
         };
-        combo_reset_bt {
-            timeout-ms = <80>;
-            key-positions = <30 33>;
-            bindings = <&bt BT_CLR>;
-        };
     };
 
     keymap {
@@ -151,7 +146,7 @@
         //│          │          │          │          │          │   │          │          │          │          │          │
             &kp F10    &kp F1     &kp F2     &kp F3     &kp C_PP  &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp C_PREV &kp C_NEXT         &trans     &trans
+                                             &bt BT_CLR &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
