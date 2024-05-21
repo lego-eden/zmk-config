@@ -127,7 +127,7 @@
             &trans   &kp EQUAL &kp LS(N7) &kp RA(N7)  &kp RA(N8)    &kp RA(N9) &kp RA(N0) &kp RA(MINUS) &kp LS(EQUAL) &kp SQT
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &kp MINUS  &kp LS(MINUS) &kp LS(N3)  &kp LS(N5) &kp LA(RBKT) &kp LS(BSLH) &trans   &trans
+            &trans     &trans     &kp MINUS  &kp LS(MINUS) &kp LS(N3)  &kp LS(N5) &kp RA(RBKT) &kp LS(BSLH) &trans   &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp BSLH    &kp LS(N2)     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
