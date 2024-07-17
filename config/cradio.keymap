@@ -99,7 +99,7 @@
             &trans     &kp N7     &kp N8     &kp N9   &kp LS(RBKT)    &kp LS(N1) &kp RA(N4)  &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │ &        │   │ |        │ =        │          │          │          │
-      HRML( N0,        N4,        N5,        N6 )      &kp LS(N6)   &kp RA(NUBS) &ht LSHFT LS(N0) &ht LALT RA(N2) &ht LGUI LS(BSLH)
+      HRML( N0,        N4,        N5,        N6 )      &kp LS(N6)   &kp RA(NUBS) &ht LSHFT LS(N0) &ht LALT RA(N2) &ht LGUI LS(BSLH) &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &kp N1     &kp N2     &kp N3     &trans         &trans     &trans     &trans     &trans     &trans
