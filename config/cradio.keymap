@@ -28,7 +28,7 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <100>;
             require-prior-idle-ms = <100>;
-            bindings = <&lt>, <&kp>;
+            bindings = <&mo>, <&kp>;
         };
         td0: tap_dance_nordic_top {
             compatible = "zmk,behavior-tap-dance";
