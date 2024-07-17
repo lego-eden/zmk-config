@@ -18,8 +18,17 @@
             flavor = "balanced";
             tapping-term-ms = <180>;
             quick-tap-ms = <100>;
-            require-prior-idle-ms = <80>;
+            require-prior-idle-ms = <100>;
             bindings = <&kp>, <&kp>;
+        };
+        htl: hold_tap_layer {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <100>;
+            bindings = <&lt>, <&kp>;
         };
         td0: tap_dance_nordic_top {
             compatible = "zmk,behavior-tap-dance";
@@ -73,12 +82,12 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  Ö       │
-       HRML(    A,         S,         D,          F  )  &kp G          &kp H HRMR_TWO(J,      K,         L,         SEMI)
+       HRML(    A,         S,         D,          F  )  &kp G          &kp H HRMR_TWO(J,      K,         L,         SEMIö)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , ;      │ . :      │ - _      │
             &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &ht 2 SPACE &ht 4 TAB    &ht 3 RETURN &ht 1 BSPC
+                                            &htl 2 SPACE &htl 4 TAB    &htl 3 RETURN &htl 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
