@@ -15,22 +15,22 @@
         ht: hold_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <220>;
-            quick-tap-ms = <150>;
-            require-prior-idle-ms = <100>;
+            flavor = "balanced";
+            tapping-term-ms = <180>;
+            quick-tap-ms = <100>;
+            require-prior-idle-ms = <80>;
             bindings = <&kp>, <&kp>;
         };
         td0: tap_dance_nordic_top {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&kp FSLH>, <&kp LBKT>;
         };
         td1: tap_dance_nordic_lower {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
             bindings = <&ht LGUI SEMI>, <&kp SQT>;
         };
     };
@@ -55,6 +55,7 @@
             timeout-ms = <80>;
             key-positions = <32 33>;
             bindings = <&kp DEL>;
+            layers = <0 1 2 3 4>;
         };
         combo_no_hrm {
             timeout-ms = <50>;
@@ -72,12 +73,12 @@
             &kp Q      &kp W      &kp E      &kp R      &kp T          &kp Y      &kp U      &kp I      &kp O      &kp P
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  A       │  S       │  D       │  F       │  G       │   │  H       │  J       │  K       │  L       │  Ö       │
-       HRML(    A,         S,         D,          F  )  &kp G          &kp H HRMR(    J,         K,         L    )
+       HRML(    A,         S,         D,          F  )  &kp G          &kp H HRMR_TWO(J,      K,         L,         SEMI)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│  Z       │  X       │  C       │  V       │  B       │   │  N       │  M       │ , ;      │ . :      │ - _      │
-            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &td0
+            &kp Z      &kp X      &kp C      &kp V      &kp B          &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                            &lt 2 SPACE &lt 4 TAB    &lt 3 RETURN &lt 1 BSPC
+                                            &ht 2 SPACE &ht 4 TAB    &ht 3 RETURN &ht 1 BSPC
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -86,10 +87,10 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │ ^        │   │ !        │ $        │          │          │          │
-            &trans     &kp N7     &kp N8     &kp N9   &kp LS(RBKT)     &kp LS(N1)    &kp RA(N4)  &trans     &trans     &trans
+            &trans     &kp N7     &kp N8     &kp N9   &kp LS(RBKT)    &kp LS(N1) &kp RA(N4)  &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │ &        │   │ |        │ =        │          │          │          │
-      HRML( N0,        N4,        N5,        N6 )      &kp LS(N6)   &kp RA(NUBS) &ht LSHFT LS(N0) &trans     &trans     &trans
+      HRML( N0,        N4,        N5,        N6 )      &kp LS(N6)   &kp RA(NUBS) &ht LSHFT LS(N0) &ht LALT RA(N2) &ht LGUI LS(BSLH)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
             &trans     &kp N1     &kp N2     &kp N3     &trans         &trans     &trans     &trans     &trans     &trans
@@ -121,13 +122,13 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &kp EQUAL  &kp LS(N8)  &kp NUBS    &kp LS(NUBS) &kp LS(N9) &kp LS(EQUAL) &trans &kp LBKT
+            &trans     &trans     &kp EQUAL  &kp LS(N8)  &kp NUBS    &kp LS(NUBS) &kp LS(N9) &kp LS(EQUAL) &trans  &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans   &kp EQUAL &kp LS(N7) &kp RA(N7)  &kp RA(N8)    &kp RA(N9) &kp RA(N0) &kp RA(MINUS) &kp LS(EQUAL) &kp SQT
+            &kp MINUS  &kp EQUAL  &kp LS(N7) &kp RA(N7)  &kp RA(N8)  &kp RA(N9) &kp RA(N0) &kp RA(MINUS) &kp LS(EQUAL) &kp LS(BSLH)
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │          │          │          │          │
-            &trans     &trans     &kp MINUS  &kp LS(MINUS) &kp LS(N3)  &kp LS(N5) &kp RA(RBKT) &kp LS(BSLH) &trans   &trans
+            &trans     &trans     &trans   &kp LS(MINUS) &kp LS(N3)  &kp LS(N5) &kp RA(RBKT) &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                             &kp BSLH    &kp LS(N2)     &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
